@@ -18,28 +18,11 @@ permissions: Manages permission sets and policy attachments.
 account_assignment: Manages account and OU assignments for groups.
 Architecture
 This setup is divided into multiple files and sub-modules to maintain clean code and modularity.
-
+```markdown
 File Structure
 
-aws-sso-access-management/
-│
-├── main.tf                      # Root module, imports sub-modules
-├── variables.tf                 # Root module variables
-├── outputs.tf                   # Root module outputs
-├── modules/
-│   ├── users/
-│   │   ├── main.tf              # SSO user creation resources
-│   │   └── outputs.tf           # Outputs for users module
-│   ├── groups/
-│   │   ├── main.tf              # SSO group creation and membership
-│   │   └── outputs.tf           # Outputs for groups module
-│   ├── permissions/
-│   │   ├── main.tf              # Permission sets and policy attachment
-│   │   └── outputs.tf           # Outputs for permissions module
-│   └── account_assignment/
-│       ├── main.tf              # Account and OU assignment resources
-│       └── outputs.tf           # Outputs for account assignment module
-└── README.md                    # Documentation for the setup
+aws-sso-access-management/ │ ├── main.tf # Root module, imports sub-modules ├── variables.tf # Root module variables ├── outputs.tf # Root module outputs ├── modules/ │ ├── users/ │ │ ├── main.tf # SSO user creation resources │ │ └── outputs.tf # Outputs for users module │ ├── groups/ │ │ ├── main.tf # SSO group creation and membership │ │ └── outputs.tf # Outputs for groups module │ ├── permissions/ │ │ ├── main.tf # Permission sets and policy attachment │ │ └── outputs.tf # Outputs for permissions module │ └── account_assignment/ │ ├── main.tf # Account and OU assignment resources │ └── outputs.tf # Outputs for account assignment module └── README.md # Documentation for the setup
+
 Root Module (main.tf)
 The main.tf file imports the sub-modules for managing users, groups, permissions, and account assignments. It initializes the AWS provider and handles orchestration of resources across all modules.
 
