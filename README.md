@@ -1,3 +1,4 @@
+
 AWS SSO Access Management Terraform Module
 This repository contains Terraform modules for managing AWS Single Sign-On (SSO) user access. The modules help you automate user and group management, assign permission sets, and assign these permission sets to specific AWS accounts or organizational units (OUs). The goal is to create a modular, scalable, and reusable infrastructure setup using Terraform to manage your AWS SSO environment.
 
@@ -202,8 +203,9 @@ Users are members of these roles (groups).
 Permission sets define the access that each role (group) has to resources.
 Account assignments ensure that users/groups have the appropriate permissions in specific AWS accounts or OUs.
 
-Does it include full RBAC?
 While this project provides a basic RBAC setup using AWS SSO, it could be extended further depending on more complex organizational structures or specific requirements (like more granular permissions or multiple groups with different roles). However, the foundational concepts of RBAC—defining users, groups, roles (permission sets), and resource access—are covered in this tutorial.
+
+Follow this link for an extended version of this project that uses [Role Based Access Analyzer:] (git remote add origin https://github.com/philtopher/cross-account-access-and-permissions-management-rbac.git)
 
 Conclusion
 This Terraform module provides an automated and scalable way to manage AWS SSO users, groups, permissions, and account assignments. By structuring the code into modules, you can reuse the configuration across multiple environments and AWS accounts, while maintaining flexibility and ease of management.
