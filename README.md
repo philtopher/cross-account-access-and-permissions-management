@@ -40,8 +40,7 @@ aws-sso-access-management/
 │       ├── main.tf              # Account and OU assignment resources
 │       └── outputs.tf           # Outputs for account assignment module
 └── README.md                    # Documentation for the setup
-
-
+```
 
 
 Root Module (main.tf)
