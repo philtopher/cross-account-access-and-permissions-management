@@ -205,7 +205,7 @@ Account assignments ensure that users/groups have the appropriate permissions in
 
 While this project provides a basic RBAC setup using AWS SSO, it could be extended further depending on more complex organizational structures or specific requirements (like more granular permissions or multiple groups with different roles). However, the foundational concepts of RBAC—defining users, groups, roles (permission sets), and resource access—are covered in this tutorial.
 
-Follow this link for an extended version of this project that uses [Role Based Access Analyzer:] (git remote add origin https://github.com/philtopher/cross-account-access-and-permissions-management-rbac.git)
+Follow this link for an extended version of this project that uses Role Based Access Analyzer: git remote add origin https://github.com/philtopher/cross-account-access-and-permissions-management-rbac.git
 
 Conclusion
 This Terraform module provides an automated and scalable way to manage AWS SSO users, groups, permissions, and account assignments. By structuring the code into modules, you can reuse the configuration across multiple environments and AWS accounts, while maintaining flexibility and ease of management.
