@@ -1,16 +1,16 @@
 # modules/users/main.tf
 resource "aws_identitystore_user" "example" {
   identity_store_id = var.identity_store_id
-  display_name      = "Tochi Akagbulem"
-  user_name         = "tochai"
+  display_name      = "John Doe"
+  user_name         = "johnny"
 
   name {
-    given_name  = "Tochi"
-    family_name = "Unamka"
+    given_name  = "John"
+    family_name = "Doe"
   }
 
   emails {
-    value = "tufort-facebk@yahoo.co.uk"
+    value = "john.doe@example.com"
   }
 }
 
